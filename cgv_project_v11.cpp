@@ -1323,29 +1323,33 @@ int main(int argc,char **argv)
     glutDisplayFunc(display);
 
         
-static int animeringsmeny;
-static int hashmenu;
-static int springmeny;
-static int menu_opt;
-static int menyid,sec_menu;
-static int val = 0;
+    static int animeringsmeny;
+    static int hashmenu;
+    static int springmeny;
+    static int menu_opt;
+    static int menyid,sec_menu;
+    static int val = 0;
 
  
     
-animeringsmeny = glutCreateMenu(menu);
+    animeringsmeny = glutCreateMenu(menu);
 	
 	// Add sub menu entry
 	glutAddMenuEntry("  BLOCK  ", 1);
 	glutAddMenuEntry("  GO BACK  ", 2);
-hashmenu = glutCreateMenu(menu);
+
+    hashmenu = glutCreateMenu(menu);
     glutAddMenuEntry("Hashgraph",8);
-menu_opt = glutCreateMenu(menu);
+
+    menu_opt = glutCreateMenu(menu);
     glutAddMenuEntry("  CHAINING    ",3);
+
     glutAddMenuEntry("  MINING    ",4);
-sec_menu=glutCreateMenu(menu);
+    sec_menu=glutCreateMenu(menu);
+
     glutAddMenuEntry("CONSENSUS",7)	;
     glutAddMenuEntry("CRYPTOGRAPHY",5);
-springmeny = glutCreateMenu(menu);
+    springmeny = glutCreateMenu(menu);
 	
 	glutAddSubMenu("    LOOK INSIDE A BOX  ", animeringsmeny);
     glutAddSubMenu("Look Inside A Hashgraph",hashmenu);
