@@ -160,16 +160,20 @@ glLoadIdentity();
 void hashgraph(){
     float theta;
     glTranslatef(0,0,0);
+    drawtext("Timestamp",5,6,3);
+    drawtext("Transaction",5,5,3);
+    drawtext("HASH",5,4,3);
+    drawtext("HASH PREVIOUS",5,3,3);
     glRotatef(angle,0,0,1);
 
-    drawtext("event definition",0,5,4);
-    drawtext("event entry",0,-6,4);
+    drawtext("gossip incoming event",0,5,4);
+    drawtext("gossip about gossip ougoing event",0,-6,4);
     glColor3f(0.2,0.7,0.1);
     glBegin(GL_LINES);
     glVertex2f(1,1);
     glVertex2f(5,5); 
     glEnd();
-
+    glColor3f(1,0,0);
     glBegin(GL_LINES);
     glVertex2f(1,1);
     glVertex2f(-5,-5); 
