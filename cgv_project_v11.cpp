@@ -160,12 +160,12 @@ glLoadIdentity();
 void hashgraph(){
     float theta;
     glTranslatef(0,0,0);
-    drawtext("Timestamp",5,6,3);
-    drawtext("Transaction",5,5,3);
-    drawtext("HASH",5,4,3);
-    drawtext("HASH PREVIOUS",5,3,3);
-    glRotatef(angle,0,0,1);
+    drawtext("Timestamp:",5,6,3);
+    drawtext("Transaction:",5,5,3);
+    drawtext("HASH:",5,4,3);
+    drawtext("HASH PREVIOUS:",5,3,3);
 
+    glRotatef(angle,0,0,1);
     drawtext("gossip incoming event",0,5,4);
     drawtext("gossip about gossip ougoing event",0,-6,4);
     glColor3f(0.2,0.7,0.1);
@@ -1343,7 +1343,7 @@ int main(int argc,char **argv)
 	glutAddMenuEntry("  GO BACK  ", 2);
 
     hashmenu = glutCreateMenu(menu);
-    glutAddMenuEntry("Hashgraph",8);
+    glutAddMenuEntry("HASHGRAPH",8);
 
     menu_opt = glutCreateMenu(menu);
     glutAddMenuEntry("  CHAINING    ",3);
@@ -1356,7 +1356,7 @@ int main(int argc,char **argv)
     springmeny = glutCreateMenu(menu);
 	
 	glutAddSubMenu("    LOOK INSIDE A BOX  ", animeringsmeny);
-    glutAddSubMenu("Look Inside A Hashgraph",hashmenu);
+    glutAddSubMenu("LOOK INSIDE A HASHGRAPH",hashmenu);
 	//glutAddSubMenu("    INTRO   ", menu_opt);
 					 
 	// Create the menu, this menu becomes the current menu
