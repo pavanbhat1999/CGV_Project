@@ -160,10 +160,10 @@ glLoadIdentity();
 void hashgraph(){
     float theta;
     glTranslatef(0,0,0);
-    // glRotatef(-90,0,0,1);
+    glRotatef(angle,0,0,1);
 
-    drawtext("press   'b'   to go back",0,5,4);
-    drawtext("press   'b'   to go back",0,-6,4);
+    drawtext("event definition",0,5,4);
+    drawtext("event entry",0,-6,4);
     glColor3f(0.2,0.7,0.1);
     glBegin(GL_LINES);
     glVertex2f(1,1);
