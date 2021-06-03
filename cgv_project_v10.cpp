@@ -1337,5 +1337,4 @@ glBlendFunc(GL_SRC_ALPHA,GL_DST_ALPHA);
     glEnable(GL_DEPTH_TEST);
     init();
     glutMainLoop();
-
 }
