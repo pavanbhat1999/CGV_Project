@@ -245,8 +245,8 @@ void display()
 glEnd();
     drawpkt();
     if (block1)
-    drawtext("BLOCK 1",-8.0,-2.0);
-    drawtext("P1",x_pos+0.5,-1.0);
+        drawtext("BLOCK 1",-8.0,-2.0);
+        drawtext("P1",x_pos+0.5,-1.0);
     drawtext("----------------------------------------BLOCK CHAIN - THE NEXT BIG THING----------------------------------------",-9.0,9.0);
     drawtext("press c to continue",-9.0,-9.0);
     }
