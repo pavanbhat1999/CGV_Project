@@ -12,8 +12,6 @@ using namespace std;
 ostringstream oss;
 vector< string > names( 1 );
 
-
-
 void *fonts[] = { GLUT_BITMAP_9_BY_15,
 				  GLUT_BITMAP_TIMES_ROMAN_10,
 				  GLUT_BITMAP_TIMES_ROMAN_24,
