@@ -1303,7 +1303,7 @@ if(hashpage){
         glFlush();
         glColor3f(1,0.1,0.3);
         drawtext("press   'b'   to go back",-9.0,-7.5,4);
-        drawtext("---------------------------------------------------BLOCK CHAIN - THE NEXT BIG THING---------------------------------------------------",-9.0,9.0,3);
+        drawtext("------------------------------------------------------------------BLOCK CHAIN  vs HASH GRAPH---------------------------------------------------",-9.0,9.0,3);
         drawtext("press   'c'   to continue to next page",-9.0,-8.0,4);
         drawtext("press   'p'   to  know packet info",-9.0,-8.5,4);
         glColor3f(1,0,0);
@@ -1320,7 +1320,7 @@ int main(int argc,char **argv)
     glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
     glutInitWindowPosition(100,1000);
     glutInitWindowSize(1200,1000);
-    glutCreateWindow("BLOCK CHAIN - THE NEXT BIG THING");
+    glutCreateWindow("BLOCK CHAIN  vs HASH GRAPH");
 
     glutDisplayFunc(display);
 
